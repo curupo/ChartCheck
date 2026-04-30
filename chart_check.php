@@ -248,10 +248,10 @@ function buildTelegramMessage(array $signals, string $overall): string
     $close_flg = false;
     foreach ($signals as $tfKey => $d) {
 
-	if ($close_flg === false) {
+        if ($close_flg === false) {
             $msg .= "💰 現在値: `\${$d['close']}`\n\n";
-	    $close_flg = true;
-	}
+            $close_flg = true;
+        }
 
         $rsiWarn = '';
         if ($d['rsi'] <= 30)     $rsiWarn = ' ⚠️ 売られ過ぎ';
