@@ -64,7 +64,7 @@ define('BINANCE_API_SECRET', '');
 ### 3. テスト実行
 
 ```bash
-php trading_bot.php
+php chart_check.php
 ```
 
 ---
@@ -77,10 +77,10 @@ crontab -e
 
 ```cron
 # 毎時0分に実行（1h足チェック）
-0 * * * * /usr/bin/php /path/to/trading_bot.php >> /path/to/logs/cron.log 2>&1
+0 * * * * /usr/bin/php /path/to/chart_check.php >> /path/to/logs/cron.log 2>&1
 
 # 4時間ごとに実行（4h・8h足メイン）
-0 */4 * * * /usr/bin/php /path/to/trading_bot.php >> /path/to/logs/cron.log 2>&1
+0 */4 * * * /usr/bin/php /path/to/chart_check.php >> /path/to/logs/cron.log 2>&1
 ```
 
 ---
