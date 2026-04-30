@@ -57,4 +57,5 @@ php -r "
       \$ok = false;
     }
   }
-  echo \$ok ? '\n✅ 全て OK\n' : '\n❌ 不足あり\n';
+  echo \$ok ? '✅ 全てOK' : '❌ 不足あり';
+"
